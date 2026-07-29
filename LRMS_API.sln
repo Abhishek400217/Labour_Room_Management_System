@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37328.6 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LRMS_API", "LRMS_API\LRMS_API.csproj", "{E8C3A0FF-2EAD-4673-BA89-5E582406F3F2}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E8C3A0FF-2EAD-4673-BA89-5E582406F3F2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8C3A0FF-2EAD-4673-BA89-5E582406F3F2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8C3A0FF-2EAD-4673-BA89-5E582406F3F2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8C3A0FF-2EAD-4673-BA89-5E582406F3F2}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4C4F8607-0CE3-434B-9E88-367479727364}
+	EndGlobalSection
+EndGlobal
