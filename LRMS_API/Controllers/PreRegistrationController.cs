@@ -1,4 +1,4 @@
-﻿namespace LRMS_API.Controller
+﻿namespace LRMS_API.Controllers
 {
     public class PreRegistrationController
     {

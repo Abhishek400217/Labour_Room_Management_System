@@ -2,7 +2,7 @@
 using LRMS_API.Services;
 using Microsoft.AspNetCore.Mvc;
 
-namespace LRMS_API.Controllers
+namespace LRMS_API.Controllerss
 {
     [ApiController]
     [Route("api/[controller]")]
