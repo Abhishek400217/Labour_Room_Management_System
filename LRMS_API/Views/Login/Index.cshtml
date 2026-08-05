@@ -1,200 +1,244 @@
 ﻿@{
-    ViewData["Title"] = "LRMS Login";
     Layout = null;
+    ViewData["Title"] = "LRMS | Sign In";
 }
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
 
-    <title>LRMS Login</title>
+    <!-- Bootstrap 5 (layout utilities only) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
-          rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&amp;family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet" />
 
-    <link rel="preconnect"
-          href="https://fonts.gstatic.com"
-          crossorigin>
-
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
-          rel="stylesheet">
-
-    <link rel="stylesheet"
-          href="~/css/login.css" asp-append-version="true" />
-
+    <!-- Page Styles -->
+    <link rel="stylesheet" href="~/css/login.css" />
 </head>
-
 <body>
 
-    <div class="page-bg">
+    <main class="lrms-page">
 
-        <div class="background-circle"></div>
-        <div class="background-circle second"></div>
+        <!-- ============================= -->
+        <!-- BACKGROUND DECORATION LAYERS   -->
+        <!-- ============================= -->
+        <div class="bg-layer bg-grid" aria-hidden="true"></div>
+        <div class="bg-layer bg-radial" aria-hidden="true"></div>
 
-        <div class="container-fluid h-100">
+        <div class="bg-decor" aria-hidden="true">
+            <span class="decor-plus decor-plus-1">
+                <i class="fa-solid fa-plus"></i>
+            </span>
+            <span class="decor-plus decor-plus-2">
+                <i class="fa-solid fa-plus"></i>
+            </span>
+            <span class="decor-plus decor-plus-3">
+                <i class="fa-solid fa-plus"></i>
+            </span>
+            <span class="decor-plus decor-plus-4">
+                <i class="fa-solid fa-plus"></i>
+            </span>
 
-            <div class="row h-100 align-items-center">
+            <span class="decor-ring decor-ring-1"></span>
+            <span class="decor-ring decor-ring-2"></span>
+        </div>
 
-                <!-- LEFT -->
+        <!-- ECG heartbeat line anchored to the base of the brand column -->
+        <div class="ecg-wrap" aria-hidden="true">
+            <svg class="ecg-line" viewBox="0 0 1200 140" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0,90 L90,90 L110,50 L130,120 L150,90 L330,90 L350,20 L370,150 L390,90 L560,90 L580,60 L600,90 L640,90"
+                      fill="none" />
+            </svg>
+            <svg class="ecg-heart" viewBox="0 0 64 56" xmlns="http://www.w3.org/2000/svg">
+                <path d="M32 50
+                         C 8 34, 2 20, 10 11
+                         C 17 3, 28 5, 32 15
+                         C 36 5, 47 3, 54 11
+                         C 62 20, 56 34, 32 50 Z"
+                      fill="none" />
+            </svg>
+        </div>
 
-                <div class="col-lg-7 left-panel">
+        <div class="container-fluid lrms-shell">
+            <div class="row g-0 lrms-row">
 
-                    <div class="brand">
+                <!-- ============================= -->
+                <!-- LEFT: BRAND / MARKETING PANEL -->
+                <!-- ============================= -->
+                <section class="col-lg-7 col-md-6 brand-panel" aria-label="Brand introduction">
+                    <div class="brand-content">
 
-                        <img src="~/images/logo.svg" class="logo">
+                        <div class="brand-icon" aria-hidden="true">
+                            <svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
+                                <path class="brand-icon-heart"
+                                      d="M32 56
+                                         C 10 42, 4 28, 4 18
+                                         C 4 8, 12 2, 20 4
+                                         C 26 5.5, 30 10, 32 14
+                                         C 34 10, 38 5.5, 44 4
+                                         C 52 2, 60 8, 60 18
+                                         C 60 28, 54 42, 32 56 Z"
+                                      fill="none" />
+                                <g class="brand-icon-people" fill="none">
+                                    <circle cx="26" cy="22" r="4.2" />
+                                    <path d="M18 34c0-5 3.5-8 8-8s8 3 8 8" />
+                                    <circle cx="37" cy="20" r="3.6" />
+                                    <path d="M31 31c0.5-4 3-6.5 6-6.5s5.5 2.5 6 6.5" />
+                                </g>
+                            </svg>
+                        </div>
 
-                        <h1>LRMS</h1>
+                        <h1 class="brand-wordmark">LRMS</h1>
+                        <p class="brand-subtitle">LABOUR ROOM<br />MANAGEMENT SYSTEM</p>
 
-                        <h3>
-                            LABOUR ROOM
-                            <br>
-                            MANAGEMENT SYSTEM
-                        </h3>
+                        <span class="brand-divider" aria-hidden="true"></span>
 
-                        <div class="line"></div>
-
-                        <p>
-
-                            Compassionate care.
-                            <br>
-
+                        <p class="brand-tagline">
+                            Compassionate care.<br />
                             Every birth matters.
-
                         </p>
+                        <div class="mother-baby-wrapper">
 
+                            <img src="~/images/mother-baby.jpg"
+                                 asp-append-version="true"
+                                 class="mother-baby-image"
+                                 alt="Mother and Baby">
+
+                        </div>
                     </div>
+                </section>
 
-                    <div class="illustration">
-
-                        <img src="~/images/mother-baby.svg">
-
-                    </div>
-
-                </div>
-
-                <!-- RIGHT -->
-
-                <div class="col-lg-5 d-flex justify-content-center">
-
+                <!-- ============================= -->
+                <!-- RIGHT: LOGIN CARD              -->
+                <!-- ============================= -->
+                <section class="col-lg-5 col-md-6 login-panel" aria-label="Sign in">
                     <div class="login-card">
 
-                        <h2>
+                        <header class="login-card-header">
+                            <h2 class="login-title">Welcome Back!</h2>
+                            <p class="login-subtitle">Sign in to continue</p>
+                        </header>
 
-                            Welcome Back!
+                        <form class="login-form" method="post" action="/Login/Authenticate" novalidate>
 
-                        </h2>
-
-                        <span>
-
-                            Sign in to continue
-
-                        </span>
-
-                        <form>
-
-                            <div class="input-box">
-
-                                <i class="bi bi-person"></i>
-
+                            <div class="form-field">
+                                <label for="username" class="visually-hidden">Username or Email</label>
+                                <span class="field-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-user"></i>
+                                </span>
                                 <input type="text"
-                                       placeholder="Username or Email">
-
+                                       id="username"
+                                       name="username"
+                                       class="field-input"
+                                       placeholder="Username or Email"
+                                       autocomplete="username"
+                                       required />
                             </div>
 
-                            <div class="input-box">
-
-                                <i class="bi bi-lock"></i>
-
+                            <div class="form-field">
+                                <label for="password" class="visually-hidden">Password</label>
+                                <span class="field-icon" aria-hidden="true">
+                                    <i class="fa-solid fa-lock"></i>
+                                </span>
                                 <input type="password"
                                        id="password"
-                                       placeholder="Password">
-
+                                       name="password"
+                                       class="field-input"
+                                       placeholder="Password"
+                                       autocomplete="current-password"
+                                       required />
                                 <button type="button"
-                                        class="eye">
-
-                                    👁
-
+                                        class="field-toggle"
+                                        id="togglePassword"
+                                        aria-label="Show password"
+                                        aria-pressed="false">
+                                    <i class="fa-regular fa-eye" id="togglePasswordIcon"></i>
                                 </button>
-
                             </div>
 
-                            <div class="options">
-
-                                <label>
-
-                                    <input type="checkbox">
-
-                                    Remember me
-
+                            <div class="form-options">
+                                <label class="remember-me" for="rememberMe">
+                                    <input type="checkbox" id="rememberMe" name="rememberMe" />
+                                    <span class="checkbox-box" aria-hidden="true"></span>
+                                    <span class="remember-label">Remember me</span>
                                 </label>
 
-                                <a href="#">
-
-                                    Forgot Password?
-
-                                </a>
-
+                                <a href="/Login/ForgotPassword" class="forgot-link">Forgot Password?</a>
                             </div>
 
-                            <button class="login-btn">
-
-                                Sign In
-
+                            <button type="submit" class="btn-signin" id="signInBtn">
+                                <span class="btn-signin-label">Sign In</span>
+                                <span class="btn-signin-spinner" aria-hidden="true"></span>
                             </button>
 
                         </form>
 
-                        <div class="divider">
-
-                            ❤
-
+                        <div class="login-divider" aria-hidden="true">
+                            <span class="divider-line"></span>
+                            <span class="divider-icon"><i class="fa-solid fa-heart-pulse"></i></span>
+                            <span class="divider-line"></span>
                         </div>
 
-                        <div class="security">
-
-                            🛡
-
+                        <p class="security-note">
+                            <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
                             Your data is safe with us
-
-                        </div>
+                        </p>
 
                     </div>
-
-                </div>
+                </section>
 
             </div>
-
         </div>
 
-        <div class="bottom-strip">
+        <!-- ============================= -->
+        <!-- FOOTER STRIP                   -->
+        <!-- ============================= -->
+        <footer class="lrms-footer">
+            <ul class="footer-group footer-group-trust">
+                <li class="footer-item">
+                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                    <span>Secure</span>
+                </li>
+                <li class="footer-item">
+                    <i class="fa-solid fa-shield-halved" aria-hidden="true"></i>
+                    <span>Reliable</span>
+                </li>
+                <li class="footer-item">
+                    <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                    <span>Private</span>
+                </li>
+                <li class="footer-item">
+                    <i class="fa-solid fa-lock" aria-hidden="true"></i>
+                    <span>Encrypted</span>
+                </li>
+            </ul>
 
-            <div>🛡 Secure</div>
+            <ul class="footer-group footer-group-status">
+                <li class="footer-item">
+                    <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+                    <span id="footerDate">08 May 2025</span>
+                </li>
+                <li class="footer-item">
+                    <i class="fa-regular fa-clock" aria-hidden="true"></i>
+                    <span id="footerTime">10:30 AM</span>
+                </li>
+                <li class="footer-item">
+                    <i class="fa-solid fa-building-columns" aria-hidden="true"></i>
+                    <span>City Care Hospital</span>
+                </li>
+            </ul>
+        </footer>
 
-            <div>🔒 Private</div>
+    </main>
 
-            <div>👥 Trusted</div>
-
-            <div>🛡 HIPAA Compliant</div>
-
-            <div>📅 08 May 2025</div>
-
-            <div>🕙 10:30 AM</div>
-
-            <div>🏥 City Care Hospital</div>
-
-        </div>
-
-    </div>
-
-    <script src="~/js/login.js"
-            asp-append-version="true"></script>
-
+    <script src="~/js/login.js"></script>
 </body>
-
 </html>
