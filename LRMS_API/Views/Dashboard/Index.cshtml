@@ -1,0 +1,280 @@
+﻿@{
+    Layout = "_Layout";
+    ViewData["Title"] = "Dashboard";
+}
+
+<div class="lrms-layout">
+
+    <!-- ================= SIDEBAR ================= -->
+
+    <aside class="sidebar">
+
+        <div class="logo">
+
+            <div class="logo-icon">
+                <i class="fa-solid fa-heart-pulse"></i>
+            </div>
+
+            <div>
+                <h3>LRMS</h3>
+                <span>Labour Room Management</span>
+            </div>
+
+        </div>
+
+        <ul class="menu">
+
+            <li class="active">
+                <a asp-controller="Dashboard"
+                   asp-action="Index">
+                    <i class="fa-solid fa-house"></i>
+                    Dashboard
+                </a>
+            </li>
+
+            <li>
+                <a href="/PreRegistration">
+                    <i class="fa-solid fa-user-plus"></i>
+                    Pre Registration
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-table-list"></i>
+                    View Pre Registration
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-bed"></i>
+                    Post Registration
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-share-nodes"></i>
+                    Post Referral
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-person-breastfeeding"></i>
+                    Mother Care
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-baby"></i>
+                    Baby Care
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-gear"></i>
+                    Masters
+                </a>
+            </li>
+
+            <li>
+                <a href="#">
+                    <i class="fa-solid fa-chart-line"></i>
+                    Reports
+                </a>
+            </li>
+
+        </ul>
+
+    </aside>
+
+    <!-- ================= CONTENT ================= -->
+
+    <main class="content">
+
+        <!-- Header -->
+
+        <header class="topbar">
+
+            <div>
+
+                <h2>
+                    Good Morning 👋
+                </h2>
+
+                <p>
+                    Welcome back to LRMS Dashboard
+                </p>
+
+            </div>
+
+            <div class="top-actions">
+
+                <input type="text"
+                       placeholder="Search patient..." />
+
+                <button class="notification">
+
+                    <i class="fa-regular fa-bell"></i>
+
+                </button>
+
+                <div class="profile">
+
+                    <img src="https://i.pravatar.cc/45" />
+
+                    <div>
+
+                        <strong>Nurse Kavya</strong>
+
+                        <span>Staff Nurse</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </header>
+
+        <!-- KPI -->
+
+        <section class="stats">
+
+            <div class="stat-card">
+
+                <h3>Today's Registrations</h3>
+
+                <h1>24</h1>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Pending Cases</h3>
+
+                <h1>06</h1>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Labour Cases</h3>
+
+                <h1>14</h1>
+
+            </div>
+
+            <div class="stat-card">
+
+                <h3>Discharges</h3>
+
+                <h1>08</h1>
+
+            </div>
+
+        </section>
+
+        <!-- Bottom -->
+
+        <section class="dashboard-grid">
+
+            <!-- Left -->
+
+            <div class="dashboard-card large">
+
+                <div class="card-header">
+
+                    <h4>Recent Registrations</h4>
+
+                    <a href="#">View All</a>
+
+                </div>
+
+                <table class="table">
+
+                    <thead>
+
+                        <tr>
+
+                            <th>UHID</th>
+
+                            <th>Name</th>
+
+                            <th>Status</th>
+
+                        </tr>
+
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+
+                            <td>UH1001</td>
+
+                            <td>Priya Sharma</td>
+
+                            <td>Pending</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>UH1002</td>
+
+                            <td>Anjali Patil</td>
+
+                            <td>Completed</td>
+
+                        </tr>
+
+                        <tr>
+
+                            <td>UH1003</td>
+
+                            <td>Sneha Kale</td>
+
+                            <td>Pending</td>
+
+                        </tr>
+
+                    </tbody>
+
+                </table>
+
+            </div>
+
+            <!-- Right -->
+
+            <div class="dashboard-card">
+
+                <div class="card-header">
+
+                    <h4>Quick Actions</h4>
+
+                </div>
+
+                <button class="action-btn">
+                    + New Registration
+                </button>
+
+                <button class="action-btn">
+                    Search Patient
+                </button>
+
+                <button class="action-btn">
+                    Reports
+                </button>
+
+            </div>
+
+        </section>
+
+    </main>
+
+</div>
