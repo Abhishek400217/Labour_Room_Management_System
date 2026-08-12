@@ -12,10 +12,8 @@ The system is designed to help hospitals maintain patient records, monitor labou
 - Modern Dashboard
 - Patient Management
 - Labour Room Monitoring
-- Staff Management
 - Reports & Analytics
 - Responsive User Interface
-- Clean and Professional Design
 
 > More modules will be added as the project progresses.
 
@@ -81,12 +79,6 @@ LRMS/
 
 ---
 
-## 📸 Screenshots
-
-Coming Soon...
-
----
-
 ## 🎯 Project Goal
 
 The main objective of LRMS is to provide a clean, secure, and efficient digital solution for labour room management. The project focuses on improving hospital workflow while maintaining a modern and user-friendly interface.
@@ -101,8 +93,6 @@ The main objective of LRMS is to provide a clean, secure, and efficient digital 
 - PDF Report Generation
 - Audit Logs
 - Real-Time Dashboard
-- Dark Mode
-- Mobile-Friendly Experience
 
 ---
 
@@ -116,6 +106,5 @@ GitHub: https://github.com/Abhishek400217
 
 ---
 
-## ⭐ Status
 
 🚧 Currently Under Development
