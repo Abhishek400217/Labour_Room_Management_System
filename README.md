@@ -2,7 +2,7 @@
 
 A modern web-based Labour Room Management System developed to simplify and manage labour room operations digitally.
 
-The system is designed to help hospitals maintain patient records, monitor labour room activities, manage staff, and improve overall workflow with an easy-to-use interface.
+The system is designed to help hospitals maintain patient records, monitor Delivery/labour room activities, manage staff, and improve overall workflow with an easy-to-use interface.
 
 ---
 
@@ -50,8 +50,8 @@ LRMS/
 │   └── Shared/
 │
 ├── wwwroot/
-│   ├── css/
-│   ├── js/
+│   ├── CSS/
+│   ├── JS/
 │   ├── images/
 │   └── lib/
 │
@@ -65,7 +65,6 @@ LRMS/
 
 ## 🚀 Current Progress
 
-- [x] Project Setup
 - [x] Login Page UI
 - [x] Responsive Layout
 - [ ] Authentication
@@ -91,7 +90,6 @@ The main objective of LRMS is to provide a clean, secure, and efficient digital 
 - Role-Based Access Control
 - Email Notifications
 - PDF Report Generation
-- Audit Logs
 - Real-Time Dashboard
 
 ---
@@ -107,4 +105,4 @@ GitHub: https://github.com/Abhishek400217
 ---
 
 
-🚧 Currently Under Development
+🚧 Currently Project is Under Development
