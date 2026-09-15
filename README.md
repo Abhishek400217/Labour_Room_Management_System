@@ -1,6 +1,6 @@
 # 🏥 LRMS - Labour Room Management System
 
-A modern web-based Labour Room Management System developed to simplify and manage labour room operations digitally.
+A web-based Labour Room Management System developed to simplify and manage labour room operations digitally.
 
 The system is designed to help hospitals maintain patient records, monitor Delivery/labour room activities, manage staff, and improve overall workflow with an easy-to-use interface.
 
