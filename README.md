@@ -1,4 +1,4 @@
-# 🏥 LRMS - Labour Room Management System
+# 🏥LRMS - Labour Room Management System
 
 A web-based Labour Room Management System developed to simplify and manage labour room operations digitally.
 
